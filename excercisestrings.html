@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+       
+    <p id="p1">Please locate where beans occurs!
+        I ate beans today!</p>
+    <p id="p2">Please locate where beans occurs!
+        I ate beans today! I do really love beans</p>
+
+    <button onclick="myFunction()">Find my position</button>
+
+
+    <p id="Demo"></p>
+    <p id="Demo2"></p>
+    <p id="Demo3"></p>
+    <p id="Demo4"></p>
+    <p id="Demo5"></p>
+    <p id="Demo6"></p>
+    <p id="Demo7"></p>
+    <p id="Demo8"></p>
+    <p id="Demo9"></p>
+    <p id="Demo10"></p>
+    <p id="Demo11"></p>
+    
+
+    <script>
+
+        var str = document.getElementById("p1").innerHTML;
+        var str2 = document.getElementById("p2").innerHTML;
+        var pos = str.indexOf("beans");
+        var lastpos = str.lastIndexOf("beans");
+        var searchpos = str.search("beans");
+        
+    </script>
+</body>
+</html>

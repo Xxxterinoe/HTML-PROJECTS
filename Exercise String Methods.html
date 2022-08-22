@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content width="device-width" initial-scale="1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "p1"> Please locate where beans occurs! 
+        I ate beans today! </p>
+    <p id = "p2">  Please locate where beans occurs! 
+        I ate beans today! I do really love beans! </p>
+    <p id="ul">Ultra</p>
+    <p id="vl">Violet</p>
+   
+    <button onclick="myFunction()"> Find my Position </button>
+    <!-- <button onclick="loopstr()"> LOOP </button>
+    <button onclick="loopstr2()">LOOP SECOND </button> -->
+
+    <p id = "demo"> </p>
+    <p id = "demo2"> </p>
+    <p id = "demo3"> </p>
+    <p id = "demo4"> </p>
+    <p id = "demo5"> </p>
+    <p id = "demo6"> </p>
+    <p id = "demo7"> </p>
+    <p id = "demo8"> </p>
+    <p id = "demo9"> </p>
+    <p id = "demo10"> </p>
+    <p id = "demo11"> </p>
+
+<script>
+    function myFunction() {
+    var str = document.getElementById("p1").innerHTML;
+    var str2 = document.getElementById("p2").innerHTML;
+    var u = document.getElementbyId("ul").innerHTML;
+    var v = document.getElementbyId("vl").innerHTML;
+    var pos = str.indexOf("beans");
+    var lastpos = str.lastIndexOf("beans");
+    var searchpos = str.search("beans");
+    var myslice = str.slice("-6,1");
+    var sub = str.substring("7,13");
+    var p2sub = str2.substr("7,6");
+    var newstr = str2.replace("beans", "rice");
+    var repall = str2.replace(/beans/g, "rice");  
+    var findchar= str2.charAt(4);
+    var size = str2.length;
+    var c = u.concat(v);
+
+
+    document.getElementById("demo").innerHTML = pos;
+    document.getElementById("demo2").innerHTML = lastpos;
+    document.getElementById("demo3").innerHTML = searchpos;
+    document.getElementById("demo4").innerHTML = myslice;
+    document.getElementById("demo5").innerHTML = sub;
+    document.getElementById("demo6").innerHTML = p2sub;
+    document.getElementById("demo7").innerHTML = newstr;
+    document.getElementById("demo8").innerHTML = repall;
+    document.getElementById("demo9").innerHTML = findchar;
+    document.getElementById("demo10").innerHTML = c;
+        //Others are concat, valueOf, toString, trim etc.
+        // regular expression g- means global
+}
+
+</script>
+</body>
+</html>

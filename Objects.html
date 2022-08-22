@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Working with Objects</title>
+</head>
+<body>
+    <center><h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', 
+    sans-serif; color: indianred;">About Bacelona</h1></center>
+    <p id="name"></p>
+    <p id="president"></p>
+    <p id="fanbase"></p>
+    <p id="winstats"></p>
+    <p id="losstats"></p>
+    <p id="reason"></p>
+
+    <script>
+        var club = {
+            name: "Barcelona",
+            president: "John Laporta",
+            fanbase: "2.1 million",
+            coach: "Xavi Hernadez",
+            stats: ["24 wins", "5 Losses"],
+            myReason: function() {
+                let r = "I love Barca because of its football culture";
+                console.log(r);
+            }
+        }
+        document.getElementById("name").innerHTML = club.name;
+        document.getElementById("president").innerHTML = club.president;
+        document.getElementById("fanbase").innerHTML = club.fanbase;
+        document.getElementById("winstats").innerHTML = club.stats[0];
+        document.getElementById("losstats").innerHTML = club.stats[1];
+        // document.getElementById("reason").innerHTML = club.myReason();
+        club.myReason();
+
+        var king = {
+    name: "Arthur",
+    age: 40,
+    status: "Married",
+    hobies: ['hunting', 'reading'],
+    kingdom: "Camelot",
+    showkingStatus: function() {
+        console.log(king.status);
+        
+    }
+       
+};
+    console.log(king.showkingStatus());
+    console.log(king.name);
+    console.log(king.age);
+    console.log(king.hobies);
+    console.log(king.hobies[1]);
+    console.log(king['kingdom']);
+    delete king.status;
+    console.log(king);
+
+    king.age =45;
+    console.log(king.age); 
+    </script>
+
+
+
+</body>
+</html>

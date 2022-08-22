@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo" style="cursor: pointer;"
+    onclick="document.getElementById('demo').innerHTML = 'Hello Javascript'">
+    I am your default content</p>
+    <p id="seconddemo"></p>
+
+    <p id="demo1">Chelsea</p>
+    <P id="demo2">barcelona</P>
+    <p id="demo3">dortmund</p>
+    <button onclick="swapClubs()">CLICK HERE</button>
+
+    <p id="pelement">Hey guys, where are you?</p>
+    <h3 id="headelement">Question</h3>
+    <button onclick="change()">CLICK ME</button>
+
+    <script>
+        var x = "volvo" + 16 + 4;
+        document.getElementById("seconddemo").innerHTML = x;
+
+        function swapClubs()  {
+            var x = document.getElementById("demo1");
+            var y = document.getElementById("demo2");
+            var z = document.getElementById("demo3");
+            
+            x.innerHTML = "liverpool";
+            y.innerHTML = "Real  Madrid";
+            z.innerHTML = "Bayern Munich";
+        }
+
+
+        function change() {
+            
+        }
+    </script>
+    
+</body>
+</html>

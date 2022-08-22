@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dating Site</title>
+    <style>
+        body{
+            background-color:burlywood;
+        }
+    </style>
+</head>
+<body id="bdy">
+    <p id="des"> </p>
+    <form action="">
+        <fieldset style="width: 80%; outline-width: 12px; border-color: black; height: 80% ; margin: auto;border-radius: 10px;background-color: burlywood;">
+            <legend style="text-align: center;color: black; margin: auto;">find money before you start finding love</legend>
+            <!-- GENDER: <br><br>
+            MALE<input id="M" type="radio" name="G" value="MALE" />
+            FEMALE<input id="F" type="radio" name="G" value="FEMALE"/>
+            OTHERS<input id="O" type="radio" name="G" value="OTHERS"/>
+            <p id="char"></p>
+x
+            PLAINTEXT VERSION: <P id="ps_show"></P>
+            <input type="password" id="pass"> -->
+
+             <table>  <!--style="margin: auto;" -->
+                <tr>
+                    <td>First Name:</td>
+                    <td><input id="FN" type="text" name="first_name"></td>
+                    <td>Last Name:</td>
+                    <td><input id="LN" type="text" name="Last_name"></td>
+                    <!-- Welcome, well -->
+
+                    
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        Male<input type="radio" name="g">
+                        Female<input type="radio" name="g">
+                        Others<input type="radio" name="g">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password: </td>
+                    <td> <input id="pass" type="password" name="password"></td>
+                </tr>
+
+                <tr>
+                    <td>Phone Number:</td>
+                    <td><input type="text" name="phone"></td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                    Describe Yourself: <br> <br>
+                        <textarea id="describe" name="desc" ></textarea>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        
+
+        <script>
+            var msg = document.getElementById('msg')
+            var fullname = 
+            let charcount = 0;
+            charcount >= 60;
+            let desc = document.getElementById("describe").innerHTML
+
+            desc.keypress = function () {
+            document.getElementById("describe").innerHTML = desc.value;
+            charcount = charcount + 1;
+            document.getElementById("describe").innerHTML = "Total Search Character: " + charcount;
+
+            let well = document.getElementById("FN").innerHTML;
+            
+            }
+    
+            well.onblur = function () {
+                well = "Welcome, " + well;
+    
+            }
+    
+        </script>
+    </form>
+    
+    <br><br>
+</body>
+</html>

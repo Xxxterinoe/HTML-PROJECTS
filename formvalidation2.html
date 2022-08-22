@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Form validation</title>
+</head>
+
+<body>
+<h2>Validate a number input with javascript</h2>
+<hr>
+Input number between 20 and 400: <input id="mynumb" type="number" min="20" max="400" required/>
+<p id="res"></p>
+
+<button type="button" onclick= "validateNum()">SUBMIT</button>
+<script>
+
+function validateNum() {
+    const mynumb = document.getElementById("mynumb");
+    console.log(!mynumb.check)
+}
+</script>
+</body>
+</html>
+ 

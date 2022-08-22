@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body onload="convert()">
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <label id = "l4"></label>
+
+    <script>
+        function convert(){
+            var pi = 3.142
+            var length = "14.152 centimeters"
+            //OUTPUTS
+            // 3.14 , 3.1, 14.152, 14, string, age as number
+
+            //parseInt, ParseFloat, Number (string to number, returns first value:)
+            //totring, toFixed, toPrecision (NUmber to string in specified accuracy)
+            var p1 = pi.toFixed(2);
+            var p2 = pi.toPrecision(2);
+            var p3 = parseInt(length);
+            var age_num = Number(age);
+            document.getElementById("p1").innerHTML = "3.14"
+            document.getElementById("p2").innerHTML = "3.1"
+            document.getElementById("p3").innerHTML = "14.152"
+            document.getElementById("p4").innerHTML = "14"
+            document.getElementById("p5").innerHTML = "string"
+            document.getElementById("l4").innerHTML = "age as a number"
+        }
+    </script>
+</body>
+</html>

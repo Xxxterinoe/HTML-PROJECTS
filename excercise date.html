@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Weekday begins from sunday.
+    getday() method returns the day as a number(0-6)
+    with sunday as 0-->
+        
+<body>
+       <h1>SHOW DATE AND TIME TODAY</h1><br>
+       <p id="demo"></p><br><br>
+       <p id="demo2"></p> 
+    <script>
+        var d = new Date();
+        var myDate = d.getDay();
+        var days=["Sunday" , "Monday" , "Tuesday" , "Wednesday" , "Thursday" , "Friday" , "Saturday"];
+        var msgdate = "today is:  " + days[myDate];
+        var msgtime = "current time is:  "+ d.getUTCHours() + ":"+ getUTCMinutes()+ ":" + d.getUTCSeconds();
+        document.getElementById("demo").innerHTML = msgdate;
+        document.getElementById("demo2").innerHTML = msgtime;
+
+    </script>
+
+</body>
+</html>     

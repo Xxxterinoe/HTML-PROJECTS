@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>kingdom</title>
+    <h3 id="actors">MOVIE ACTORS AND ACTRESSES</h3>
+    <p id="actor1">Scarlett Johanssen</p>
+    <p id="actor2">Milla Jovovich</p>
+    <p id="actor3">Dwayne Johnson</p>
+
+</head>
+<body>
+  
+
+<P>-------------------DISPLAY HERE------------------</P>
+
+    <h2 id="showheading"></h2>
+    <p id="show1">Idk</p>
+    <p id="show2">Klen</p>
+    <p id="show3">Spidey</p>
+
+
+
+    <button ondblclick="info()">CLICK HERE</button>
+<script>
+    function info(){
+        var actors = document.getElementById('actors').innerHTML 
+        var actor1 = document.getElementById('actor1').innerHTML 
+        var actor2 = document.getElementById('actor2') .innerHTML
+        var actor3 = document.getElementById('actor3').innerHTML
+
+        document.getElementById('showheading').innerHTML = actors
+        document.getElementById('show1').innerHTML = actor1
+        document.getElementById('show2').innerHTML = actor2
+        document.getElementById('show3').innerHTML = actor3
+
+        console.log(actors) 
+        console.log(actor1)
+        console.log(actor2)
+        console.log(actor3)
+
+    }
+</script>
+</body>
+</html>

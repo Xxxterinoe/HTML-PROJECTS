@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Event listeners</title>
+<!--What are event listeners?
+An event listener adds an event handler or multiple handlers to 
+an element. It does this using the addEventListener() methods.
+Javascript code can be executed on multiple elements by using eventListeners.
+It generally consists of an event and a function. We do
+Not use the prefix "on" when adding an event to the eventlistener-->
+
+
+</head>
+<body>
+    <!--General syntax
+    
+    As follows:
+
+    element.addEventListener(event, function)
+-->
+
+<!-- NOW LET'S ADD EVENTLISTERS TO AN ELEMENT CALLED INFO -->
+
+<!-- These eventListeners listen for more mouse events events on "info" to do something
+on the "showw" and "funmsg" elements -->
+
+<h1 id="aj">Who is angelina jolie?</h1>
+<p style="color: charteuse; font-family:Verdana, sans-serif;
+font-size: xx-large;" id="info">Move mouse here to know more...</p>
+<p id="show"></p>
+<h2 id="funmsg"></h2>
+<script>
+    let info = document.getElementById("info");
+    info.addEventListener("mouseover", basicInfo);
+    info.addEventListener("click", herMovies);
+    info.addEventListener("dblclick", herDOB);
+    info.addEventListener("mouseout", Awards);
+
+    function basicInfo(){
+        document.getElementById("show").innerHTML = "she is an actress, filmmaker and humanitarian";
+        document.getElementById("show").style.fontFamily = "Verdana";
+        info.innerHTML = "Now click!!"
+    }
+
+    function herMovies(){
+            document.getElementById("show").innerHTML = "Malificient and original sin are some of her movies ";
+            info.innerHTML = "Now double click";
+    }
+
+    function herDOB(){
+    document.getElementById("show").innerHTML = "Date of birth: june 4, 1975";
+    document.getElementById("show").style.fontcolor = "crimson";
+    info.innerHTML = "Move the mouse away";
+
+}
+function Awards(){
+    document.getElementById("show").innerHTML = "AWARDS: Academy award in year 2000, Golden globe award in year 2000";
+    document.getElementById("show").style.fontFamily = "Verdana";
+    document.getElementById("show").style.fontcolor = "crimson";
+    info.innerHTML = "Wasn't that fun.";
+
+}
+</script>
+</body>
+</html>

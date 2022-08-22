@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <title>EVENTS, ONINPUT, ONCHANGE, ONSELECT IN JAVASCRIPT</title>
+</head>
+<body>
+    <p id="chars"></p>
+    PLAINTEXT VERSION: <p id="ps_show"></p>
+    <input type="password" id="pass">
+    <br><br>
+
+    SEARCH TERM: <p id="ms_show"></p>
+    <p id="selected"></p>
+    <input type="search" id="mysearch" placeholder="Search here..."
+    onselect="showSelection()">
+    <button type="submit">SEARCH NOW</button>
+
+    <script>
+        let charcount = 0;
+        let password = document.getElementById("pass");
+        let mysearch = document.getElementById("mysearch");
+
+        password.onchange = function(){
+            document.getElementById("ps_show").innerHTML = password.value;
+
+        }
+        mysearch.oninput = function(){
+            document.getElementById("ms_show").innerHTML = mysearch.value;
+            charcount+=1;           
+            document.getElementById("char").innerHTML = "Total search character:  " + charcount;
+
+        };
+        function showSelection(){
+            document.getElementById("selected").innerHTML = mysearch.value.toUpperCase();
+            
+        }
+    </script>
+</body>
+</html>

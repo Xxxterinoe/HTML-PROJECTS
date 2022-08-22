@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Intro to JQUREY</title>
+    <script src="lawson.min.js"></script>
+    <style>
+        body {
+            background-color: rgb(0, 113, 121);
+        }
+
+        .myclass {
+            font-family: Impart, san-serif;
+            color: darkred;
+            font-size: 45px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+    <h2 class = "myclass">TUTORIAL ON JQUREY</h2>
+    <!-- P ELEMENT -->
+
+    <p>HELLO GUYS!</p><br>
+    <p>WE ARE IN CLASS</p>
+    <p id = "demo">LEARNING</p><br>
+    <p id = "demo2">JQUREY</p><br><br>
+
+    <!-- BUTTONS -->
+
+    <button id ="show_p">SHOW PELEMENT</button>
+    <button id ="hide_p">HIDE PELEMENT</button>
+    <button id ="toggle_p">TOGGLE PELEMENT</button>
+    <button id ="show_h2">SHOW H2</button>
+
+    <!-- JQUREY CODE INSIDE SCRIPT TAGS, JAVASCRIPT CODE ALSO GOES HERE -->
+
+    <script type = "text/javascript">
+
+        $(document).ready(function() {
+            $(".myclass").click(function() {
+                $(this).hide(4000);
+            });
+            $("#hide_p").click(function() {
+                $("p").hide();
+            });
+            $("#show_p").click(function() {
+                $("p").show();
+            });
+            $("#show_h2").click(function() {
+                $(".myclass").show();
+            });
+            $("#toggle_p").click(function() {
+                $("p").toggle();
+            });
+
+            
+        });
+    </script>
+</body>
+</html>        

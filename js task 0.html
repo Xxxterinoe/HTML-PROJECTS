@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script lang="Javascript">            
+    var message = document.getElementById("message");
+    var fullname = document.getElementById("fullname");
+    var password0 = document.getElementById("password0");
+    var userdesc =  document.getElementById('pass');
+    var charcount= 0;
+        function verifyPassword(){  
+    //check empty password field  
+  if(password0 == "") {  
+        
+     document.getElementById("message").innerHTML = "**Fill the password please!";  
+     return false;  
+  }}
+
+   function verifyPassword() {   
+  
+  }
+
+        function nameting(){
+        var firstname = document.getElementById("firstname");
+        var lastname = document.getElementById("lastname");
+        let fullname = firstname + " " + lastname
+        document.getElementById("slatt").innerHTML = "welcome," + firstname;  
+        }
+        
+        function passchecker(){
+        let password0 = document.getElementById("password0");
+        let password = document.getElementById("password");
+
+        
+        }
+        function cls(){
+          
+        }
+    </script>       
+    <title>... dating site</title>
+</head>
+<body>
+    <fieldset style="width: 80%; outline-width: 12px; border-color: darkblue; margin: auto;border-radius: 10px;background-color: plum;">
+        <legend style="text-align: center;color: black; margin: auto;">find money before you start finding love</legend>
+
+    <table style="margin: 20px auto;">
+        fullname:       <input type="text" id="fullname">
+        sex:
+        male:           <input type="checkbox" id="sex_male"/>
+        female:         <input type="checkbox" id="sex_female"><br><br>
+        password:       <input type="text" id="password0"><br><br>
+        write password again: <input type="text" id="password"><br><br>
+        <p id="message"></p>
+        <p id="message0"></p>
+        talt about yourself:    <input type="text" ><h4>max:60 words</h4>
+        <input type="button" id="cls" name="clear the screen" value="double click to clear the screen" onclick="">
+        </table>
+        </fieldset>
+        
+</body>
+</html>
